@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Clinic</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .doctor-profile {
+            background: #f4f4f4;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin: 10px 0 5px;
+        }
+
+        form input {
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #218838;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #007BFF;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Medical Clinic</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#appointments">Appointments</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>General Checkup</li>
+            <li>Pediatrics</li>
+            <li>Dental Care</li>
+            <li>Cardiology</li>
+            <li>Emergency Care</li>
+        </ul>
+    </section>
+
+    <section id="doctors">
+        <h2>Meet Our Doctors</h2>
+        <div class="doctor-profile">
+            <h3>Dr. John Smith</h3>
+            <p>Specialty: General Practitioner</p>
+        </div>
+        <div class="doctor-profile">
+            <h3>Dr. Jane Doe</h3>
+            <p>Specialty: Pediatrician</p>
+        </div>
+        <div class="doctor-profile">
+            <h3>Dr. Emily White</h3>
+            <p>Specialty: Cardiologist</p>
+        </div>
+    </section>
+
+    <section id="appointments">
+        <h2>Book an Appointment</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="date">Appointment Date:</label>
+            <input type="date" id="date" required>
+            <label for="time">Appointment Time:</label>
+            <input type="time" id="time" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Medical Clinic. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
